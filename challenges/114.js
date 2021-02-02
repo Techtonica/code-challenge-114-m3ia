@@ -35,8 +35,10 @@
 // // [1,2,3,4,5,6,7]
 // ```
 
-function flatten(array){
-    // your code here
-}
+// let a = [[1,2],[3,4],[5,6,7]];
 
-module.exports = flatten;
+let flatten = array => array.reduce(function(total, elem) {
+    return total.concat(elem);
+  });
+
+// module.exports = flatten;
