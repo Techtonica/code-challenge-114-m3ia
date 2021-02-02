@@ -41,4 +41,4 @@ let flatten = array => array.reduce(function(total, elem) {
     return total.concat(elem);
   });
 
-// module.exports = flatten;
+module.exports = flatten;
