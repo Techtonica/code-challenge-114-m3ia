@@ -41,4 +41,11 @@ let flatten = array => array.reduce(function(total, elem) {
     return total.concat(elem);
   });
 
+// trial line (1):
+// console.log(flatten([[1,9],[3,8]])); // gets [ 1, 9, 3, 8 ]
+
+// trial line (2):
+// let a = [[1,2],[3,4],[5,6,7]];
+// console.log(flatten(a)); // gets [ 1, 2, 3, 4, 5, 6, 7 ]
+
 module.exports = flatten;
