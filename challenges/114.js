@@ -48,6 +48,7 @@ let flatten = array => array.reduce(function(total, elem) {
 // let a = [[1,2],[3,4],[5,6,7]];
 // console.log(flatten(a)); // gets [ 1, 2, 3, 4, 5, 6, 7 ]
 
+
 module.exports = flatten;
 
 
