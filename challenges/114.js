@@ -35,8 +35,36 @@
 // // [1,2,3,4,5,6,7]
 // ```
 
-function flatten(array){
-    // your code here
-}
+// let a = [[1,2],[3,4],[5,6,7]];
+
+let flatten = array => array.reduce(function(total, elem) {
+    return total.concat(elem);
+  });
+
+// trial line (1):
+// console.log(flatten([[1,9],[3,8]])); // gets [ 1, 9, 3, 8 ]
+
+// trial line (2):
+// let a = [[1,2],[3,4],[5,6,7]];
+// console.log(flatten(a)); // gets [ 1, 2, 3, 4, 5, 6, 7 ]
+
 
 module.exports = flatten;
+
+
+
+// let flatten = array => array.reduce(function(total, elem) {
+//     return total.concat(elem);
+//   });
+/*-------*/
+// let nested = [[1,2],[3, [4, 5]], [6], 7]
+
+// let flattener = array => array.reduce(function(total, elem) {
+//     return total.concat(elem);
+// })
+
+// let flattenerer = array => array.reduce(function(total, elem) {
+//     return(flattener(array));
+// })
+
+// console.log(flattenerer(nested));
